@@ -151,4 +151,42 @@ footer {
   font-style: italic;
 }
 
+/* ---------- Comment form ---------- */
+.tale-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.tale-form input[type="text"],
+.tale-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: #fbf3dc;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+}
+.tale-form button {
+  margin-top: 1.25rem;
+  padding: 0.8rem 2rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--night);
+  background: linear-gradient(135deg, #f0c85a, var(--gold));
+  border: 3px solid var(--ink);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.tale-form button:hover { filter: brightness(1.1); }
+
+.byline {
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 0;
+}
 

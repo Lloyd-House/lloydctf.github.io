@@ -21,31 +21,39 @@
   </header>
 
   <main>
-    <section class="scroll">
-      <h2>Share Your Story</h2>
-      <p>Played in a past game? Tell us how it went, what you loved, and what
-         we should change.</p>
 
-      <!-- Generate this exact snippet at https://giscus.app (see setup steps) -->
-       <script src="https://giscus.app/client.js"
-        data-repo="avniiyer/avniiyer.github.io"
-        data-repo-id="R_kgDOVDFhKg"
-        data-category="General"
-        data-category-id="DIC_kwDOVDFhKs4DHeHf"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-      
-    </section>
-  </main>
+  <section class="scroll">
+    <h2>Share Your Story</h2>
+    <p>Played in a past game? Send us your tale. The hosts read every scroll
+       and post the best ones below.</p>
 
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="tale-form">
+      <label for="name">Your name (or adventurer alias)</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="year">Which game did you play?</label>
+      <input type="text" id="year" name="year" placeholder="e.g. 2025">
+
+      <label for="message">Your tale</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <!-- Spam trap: real people never see or fill this -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+      <button type="submit">Send the Scroll</button>
+    </form>
+  </section>
+
+  <h2 style="color: var(--gold); text-align:center;">Tales from the Realm</h2>
+
+  <!-- COPY THIS BLOCK for each approved comment. Newest on top. -->
+  <section class="scroll">
+    <p>"The comment text goes here."</p>
+    <p class="byline">&mdash; Adventurer Name, 2025</p>
+  </section>
+  <!-- END BLOCK -->
+
+</main>
   <footer>Forged in the halls of [YOUR HOUSE NAME]</footer>
 
 </body>
